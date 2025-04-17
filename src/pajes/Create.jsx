@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-import Footer from "/src/components/footer/Footer";
-import Header from "/src/components/header/header";
 import axios from "axios";
 import "./create.css";
 import { Link, Outlet } from "react-router-dom";
+import Header from "../components/header/Header";
+import Footer from "../components/footer/Footer";
 
 const URL = "http://localhost:3000/";
 
