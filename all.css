@@ -1,0 +1,87 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+}
+.load{
+    border-bottom: 10px solid red;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+
+    animation: load 2s 0s infinite ease-in alternate-reverse;
+}
+@keyframes load{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.root{
+    width: 100%;
+}
+p,li,a{
+    font-size: 1.3rem;
+    text-align: center;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a,li{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-weight: 500;
+}
+.special-gothic-regular {
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  button{
+    cursor: pointer;
+  }
+  
+
+  /* Actions */
+
+header nav a:hover{
+    color: white;
+    border-bottom: 1px solid white;
+}
+.prices a,button,header div a,.slid a{
+    transition: all .5s;
+}
+header div a:hover{
+    color: pink;
+    transform: scale(1.1);
+}
+.slid a:hover{
+    color: pink;
+    transform: scale(1.1);
+}
+.decraracoes ol a{
+    transition: all .5s;
+}
+.decraracoes ol a:hover{
+    transform: scale(1.1);
+}
+.prices a:hover,button:hover, .criar form label:hover{
+    transform: scale(1.1);
+    color: pink;
+}
+/* Animations */
+
+@keyframes cresce{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}

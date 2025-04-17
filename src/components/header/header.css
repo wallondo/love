@@ -1,0 +1,47 @@
+.header_componet{
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    background: linear-gradient(to right , rgb(216, 56, 168), rgb(248, 79, 79));
+    z-index: 1;
+}
+
+.header_componet .log{
+    min-width: 80px;
+    height: 60px;
+    color: white;
+}
+.header_componet nav{
+    display: flex;
+    min-width: 300px;
+
+}
+.header_componet ol{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.header_componet ol li{
+    margin: 0rem .5rem;
+}
+.bt_declaracao {
+    min-width: 100px;
+}
+.bt_declaracao a{
+    min-width: 120px;
+    height: 35px;
+    border-radius: 100px;
+    display: flex;
+    background-color: white;
+    color: rgb(230, 12, 49);
+    padding: .5rem;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+

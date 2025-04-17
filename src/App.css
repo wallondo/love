@@ -1,0 +1,442 @@
+@import url("../root.css");
+.App {
+  max-width: 1280px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.slid{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  margin-top: 70px;
+
+  background: linear-gradient(to bottom ,  rgb(241, 195, 228), rgb(241, 218, 218));
+}
+
+.slid h1{
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bolder;
+}
+.slid h1,h2{
+  color: var(--title);
+  text-align: center;
+}
+.slid h2{
+  margin: .5rem 0rem;
+}
+.slid a{
+  max-width: 250px;
+  width: 30%;
+  height: 35px;
+  border-radius: 25px;
+  display: flex;
+  padding: .3rem;
+  background-color: rgb(230, 14, 97);
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+.funciona{
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.funciona .borda{
+    width: 99%;
+    height: 20px;
+    max-height: 100px;
+    border-radius: 100% 100% 0% 0%;
+    background-color:  rgba(241, 195, 228, 0.473);
+    margin: 2% 0% 6% 0%;
+}
+.funciona h1{
+  color: var(--title);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.funciona ol{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.funciona ol li h2{
+  font-size: 1.5rem;
+}
+.funciona ol li{
+  flex-grow: 1;
+  margin: 1rem 1%;
+  min-height: 150px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  background-color: rgb(247, 234, 243);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.322);
+}
+.funciona ol li p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: rgba(157, 23, 77, 0.788);
+
+}
+
+.decraracoes{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.decraracoes a{
+  margin-top: 5rem;
+  color: red;
+  text-decoration: underline 1px solid red;
+}
+.decraracoes h1{
+  color: var(--title);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.decraracoes ol{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.decraracoes ol a{
+  margin: 1rem;
+  height: 300px;
+  width: 33%;
+  max-height: 300px;
+  max-width: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius:8%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.219),-1px -1px 5px rgba(0, 0, 0, 0.219);
+}
+.decraracoes ol li{
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: .2rem;
+  border-radius: 5% 5% 0% 0%;
+  
+}
+.decraracoes ol li span{
+  display: flex;
+  width: 100%;
+  height: 50%;
+  border-radius: 8% 8% 0% 0%;
+  background: linear-gradient(to right , rgb(240, 99, 197), rgb(250, 140, 140));
+}
+.decraracoes ol li span img{
+  width: 20%;
+  height: 25%;
+  max-width: 50px;
+  max-height: 50px;
+}
+.decraracoes ol li h3{
+  color: var(--title);
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+  width: 90%;
+  text-align: start;
+}
+.decraracoes ol li p{
+  width: 90%;
+  text-align: start;
+  color: var(--title);
+}
+.decraracoes ol li address{
+  width: 90%;
+  text-align: start;
+  color: var(--title);
+}
+
+.dizem{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+.dizem h1{
+  color: var(--title);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.dizem ol{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-height: 200px;
+  }
+.dizem ol li{
+  min-height: 130px;
+  width: 35%;
+  height: 90px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.404);
+  margin: 1.5rem;
+}
+.dizem ol li span{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.dizem ol li span img{
+  border-radius: 100%;
+  border: 1px solid rgb(139, 7, 7);
+  width: 40px;
+  height: 40px;
+}
+.dizem ol li span h2{
+  color: var(--title);
+  font-size: 1.2rem;
+}
+.dizem ol li p{
+  width: 90%;
+  text-align: start;
+  color: var(--title);
+  font-size: 1.1rem;
+  font-weight: bold;
+  word-break: break-all;
+}
+
+.prices{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+.prices h1{
+  color: var(--title);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  word-break: break-all;
+}
+.prices >ol{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-height: 200px;
+}
+.prices >ol>li{
+  box-shadow: 1px 1px 5px rgba(97, 1, 1, 0.39);
+  border-radius: 10px;
+  padding: 1rem;
+  width: 26%;
+  margin: .5rem;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: rgba(255, 192, 203, 0.205);
+}
+.prices >ol  ol li{
+  color: rgb(83, 2, 2);
+  text-align: start;
+  font-size: 1.2rem;
+}
+.prices >ol a{
+  max-width: 250px;
+  width: 90%;
+  height: 30px;
+  border-radius: 25px;
+  display: flex;
+  padding: .3rem;
+  background-color: rgb(230, 14, 97);
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.perguntas{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+.perguntas h1{
+  color: var(--title);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.perguntas details{
+  color: var(--title);
+  font-size: 2rem;
+  margin-bottom: .5rem;
+  background-color: rgba(245, 214, 219, 0.767);
+  border-radius: 10px;
+  padding: .2rem .5rem;
+  width: 90%;
+}
+.perguntas details summary{
+  color: rgb(179, 9, 94);
+}
+.perguntas details p{
+  text-align: start;
+  padding-left: 2rem;
+}
+.subscrive{
+  width: 100%;
+  min-height: 350px;
+  background: linear-gradient(to right , rgb(216, 56, 168), rgb(248, 79, 79));
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0rem;
+  align-items: center;
+  color: white;
+}
+.subscrive h3,.subscrive h1{
+  color: white;
+  text-align: center;
+}
+.subscrive > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 100%;
+
+}
+.subscrive > div input{
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding-left: 1rem;
+}
+.subscrive > div input::placeholder{
+  color: var(--title);
+}
+.subscrive > div button{
+  transform: translateX(-100px);
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
+  color: var(--title);
+  outline: none;
+}
+
+.fale_conosco{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+.fale_conosco h1{
+  color: var(--title);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.fale_conosco section{
+  width: 99%;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem 0rem;
+}
+.fale_conosco section form{
+  min-height: 350px;
+  width: 45%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+}
+section form input{
+  width: 90%;
+  height: 40px;
+  border-radius: 10px;
+  border: .5px solid pink;
+  outline: none;
+  margin: 0px 0px .8rem 0rem;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+  color: rgb(107, 7, 82);
+}
+section form textarea{
+  width: 90%;
+  height: 100px;
+  border: .5px solid pink;
+  outline: none;
+  max-height: 100px;
+  max-width: 400px;
+  font-size: 1.2rem;
+  color: rgb(107, 7, 82);
+  padding-left: 1rem;
+}
+form button{
+  max-width: 250px;
+    width: 90%;
+    height: 40px;
+    border-radius: 25px;
+    display: flex;
+    padding: .3rem;
+    background-color: rgb(230, 14, 97);
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin: 1rem;
+    color: white;
+}
+.fale_conosco section>div{
+  width: 45%;
+  border: .5px solid pink;
+  height: 300px;
+  border-radius: 10px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}

@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.off{
+    display: none !important;
+}
+.left{
+    transform: translateX(-101%);
+}
+.top{
+    transform: translateY(-101%);
+}
+
+.on{
+    display: flex !important;
+}
+.bt_hover{
+    transition: all 1s;
+    border: none;
+}
+.bt_hover:hover{
+    cursor: pointer;
+    border: .5px solid grey !important;
+    
+}
+p{
+    font-size: 1.5rem;
+}
