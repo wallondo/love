@@ -1,10 +1,10 @@
+import React from "react";
 import { Routes, BrowserRouter, Route } from "react-router-dom";
 import App from "./App";
 import Creater from "./pajes/Create";
 import Declaration from "./components/declaration/Declaration";
 import Not_Love from "./pajes/Not_Love";
 import May_Love from "./pajes/May_Love";
-
 
 
 export default function Rotas(){
