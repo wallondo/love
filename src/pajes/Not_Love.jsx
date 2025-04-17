@@ -1,5 +1,6 @@
-import Footer from "/src/components/footer/Footer";
-import Header from "/src/components/header/header";
+import Footer from "../components/footer/Footer";
+import Header from "../components/header/Header";
+
 
 export default function Not_Love(){
     return(
