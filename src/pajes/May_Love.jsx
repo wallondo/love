@@ -1,6 +1,6 @@
 import axios from "axios";
-import Footer from "../components/footer/Footer";
-import Header from "../components/header/header";
+import Footer from "/src/components/footer/Footer";
+import Header from "/src/components/header/header";
 import "./May_Love.css";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
