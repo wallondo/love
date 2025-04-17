@@ -1,5 +1,5 @@
 {
-  "name": "server love",
+  "name": "serverlove",
   "version": "1.0.0",
   "description": "minha api para envio de sms",
   "main": "index.js",
