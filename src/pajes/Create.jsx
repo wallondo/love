@@ -6,7 +6,8 @@ import { Link, Outlet } from "react-router-dom";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 
-const URL = "http://localhost:3000/";
+// const URL = "http://localhost:3000/";
+const URL = "https://loveserver-psi.vercel.app/"
 
 export default function Creater(){
     const [sms,setSms] = useState("")

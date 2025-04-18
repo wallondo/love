@@ -4,7 +4,8 @@ import "./declaration.css";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 
-const URLs = "http://localhost:3000/";
+// const URLs = "http://localhost:3000/";
+const URL = "https://loveserver-psi.vercel.app/"
 
 export default function Declaration(){
     const params = useParams()

@@ -6,7 +6,8 @@ import "./May_Love.css";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-const URL = "http://localhost:3000/";
+// const URL = "http://localhost:3000/";
+const URL = "https://loveserver-psi.vercel.app/"
 
 export default function May_Love(){
     const [declaracoes,setDeclaroes] = useState([])
