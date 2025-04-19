@@ -3,6 +3,7 @@
     padding: 0%;
     scroll-behavior: smooth;
 }
+
 .load{
     border-bottom: 10px solid red;
     height: 100px;
@@ -47,7 +48,9 @@ a,li{
     cursor: pointer;
   }
   
-
+.top{
+    transform:translateY(-1005%) !important;
+}
   /* Actions */
 
 header nav a:hover{
@@ -85,3 +88,4 @@ header div a:hover{
         transform: scale(1.2);
     }
 }
+

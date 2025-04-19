@@ -7,8 +7,17 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  overflow-y:hidden;
 }
-
+.App >  section{}
+.body_span{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow-y:hidden;
+  width: 95%;
+}
 .slid{
   width: 100%;
   display: flex;
@@ -51,6 +60,8 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+
+  transition: all 1.8s;
 }
 .funciona .borda{
     width: 99%;
@@ -101,6 +112,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 1.7s;
 
 }
 .decraracoes a{
@@ -181,6 +193,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 1rem;
+  transition: all 1.7s;
 }
 .dizem h1{
   color: var(--title);
@@ -240,6 +253,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 1rem;
+  transition: all 1.7s;
 }
 .prices h1{
   color: var(--title);
@@ -294,6 +308,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 1rem;
+  transition: all 1.7s;
 }
 .perguntas h1{
   color: var(--title);
@@ -325,6 +340,7 @@
   margin: 5rem 0rem;
   align-items: center;
   color: white;
+  transition: all 1.7s;
 }
 .subscrive h3,.subscrive h1{
   color: white;
@@ -367,6 +383,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 1rem;
+  transition: all 1.7s;
 }
 .fale_conosco h1{
   color: var(--title);
@@ -413,7 +430,7 @@ section form textarea{
   padding-left: 1rem;
 }
 form button{
-  max-width: 250px;
+    max-width: 250px;
     width: 90%;
     height: 40px;
     border-radius: 25px;
