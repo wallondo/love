@@ -45,6 +45,16 @@ server.post("/declaracao",(req,resp)=>{
     resp.send({status:201,sms:"fid",declarations:[...dec]})
 })
 
+server.post("/email",(req,resp)=>{
+
+
+    resp.send({status:200,sms:"email recevid",data:req.body})
+})
+
+server.post("/fale-conosco",(req,resp)=>{
+
+    resp.send({status:200,sms:"dados recebido",data:req.body})
+})
 server.listen(3000,()=>{
     console.log("rodando....")
 })

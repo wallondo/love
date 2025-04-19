@@ -434,6 +434,7 @@ form button{
   border: .5px solid pink;
   height: 300px;
   border-radius: 10px;
+  background:linear-gradient(to right , rgb(216, 56, 168), rgb(248, 79, 79));
 }
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {

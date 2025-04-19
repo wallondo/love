@@ -1,13 +1,14 @@
 import React from "react";
-import { useEffect, useState } from 'react'
+import { useEffect, useState ,useRef} from 'react'
 import './App.css'
 import axios from "axios";
 import { Link } from 'react-router-dom';
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
+import URL from "./Url";
 
 // const URL = "http://localhost:3000/";
-const URL = "https://loveserver-psi.vercel.app/"
+// const URL = "https://loveserver-psi.vercel.app/"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,8 @@ function App() {
   useEffect(()=>{
     axios.get(URL+"declaration_all")
     .then((dados)=>{
+      console.log(dados);
+      
       setDeclaroes([...dados.data.declarations])
     })
     .catch((err)=>{
@@ -31,10 +34,47 @@ function App() {
       setDeclaroes2([...h])
     }
   },[declaracoes])
+  const email = useRef(null)
+  const email_send = () =>{
+    if(email.current.value==""){
+      alert("Insira um indereço de email")
+    }else{
+      axios.post(URL+"email",{email:email.current.value})
+      .then((data)=>{
+        alert("Recebido com exito")
+        email.current.value="";
+      })
+      .catch((erros)=>{
+        console.log("erosssss");
+      })
+    }
+  }
+const nom = useRef(null)
+const num = useRef(null)
+const text = useRef(null)
+
+  const fale_conosco_ = ()=>{
+    if (nom.current.value==""||num.current.value==""||text.current.value=="") {
+        alert("Preencha todos os Campos")
+    } else {
+      axios.post(URL+"fale-conosco",{nom:nom.current.value,num:num.current.value,text:text.current.value})
+      .then((dados)=>{
+        alert("Recebido com exito");
+      })
+      .catch((err)=>{
+        console.log("errossssssss");
+        
+      })
+    }
+  }
+const sub = (evt)=>{
+  evt.preventDefault()
+}
 
   return (
     <div className='App' id='l-h'>
        <Header/>
+    
        <div className='slid'>
             <h1>Eternize o seu amor de forma sem igual!!!</h1>
             <h2>Faça com que o seu parceiro e o mundo saiba que é praa sempre</h2>
@@ -142,50 +182,50 @@ function App() {
               </details>
               <details className='special-gothic-regular'>
                   <summary>
-                    Quanto tempo online?
+                    Como posso postar minha declaração?
                   </summary>
                   <p>
-                      O tempo de uma recordação é definida pelo plano adqirido
+                      Simple, a seção como "funciona" vai responde e indicar como faze-lo!
                   </p>
               </details>
               <details className='special-gothic-regular'>
                   <summary>
-                    Quanto tempo online?
+                    De onde poso acessar?
                   </summary>
                   <p>
-                      O tempo de uma recordação é definida pelo plano adqirido
+                     O sistema estará sempre online e acessivel para qualque aparelho.
                   </p>
               </details>
               <details className='special-gothic-regular'>
                   <summary>
-                    Quanto tempo online?
+                    Posso deletar minhas Histórias?
                   </summary>
                   <p>
-                      O tempo de uma recordação é definida pelo plano adqirido
+                      No momento , só o Gestro do sitema pode deletar ou Editar após criada.
                   </p>
               </details>
               <details className='special-gothic-regular'>
                   <summary>
-                    Quanto tempo online?
+                    Como contactar o Gestor?
                   </summary>
                   <p>
-                      O tempo de uma recordação é definida pelo plano adqirido
+                     Podes contactar o gestor "Quinguri" pelo whats : 925786916
                   </p>
               </details>
               <details className='special-gothic-regular'>
                   <summary>
-                    Quanto tempo online?
+                    Posso ter meu próprio sistema?
                   </summary>
                   <p>
-                      O tempo de uma recordação é definida pelo plano adqirido
+                     Sim, podes. Apenas entrar em contacto com o Gestor e solicitar um projeo semelhante.
                   </p>
               </details>
               <details className='special-gothic-regular'>
                   <summary>
-                    Quanto tempo online?
+                    Quanto custa meu próprio sistema?
                   </summary>
                   <p>
-                      O tempo de uma recordação é definida pelo plano adqirido
+                      O preçario de cada sistema será abordado com o Gestor, mas sempre bem acessivel.
                   </p>
               </details>
               <div className='subscrive'>
@@ -194,19 +234,19 @@ function App() {
                         recebera em menos de 5min a mais nova atualização
                     </h3>
                     <div>
-                        <input type="email" placeholder='Email : ' />
-                        <button>Enviar</button>
+                        <input ref={email} type="email" placeholder='Email : ' />
+                        <button onClick={email_send}>Enviar</button>
                     </div>
               </div>
        </section>
        <section className='fale_conosco' id='fale_conosco'>
             <h1>Fale Conosco</h1>
             <section>
-                  <form action="#">
-                    <input type="text" name='nome' placeholder='Nome : ' required autoComplete='off'/>
-                    <input type="number" name='number' placeholder='Número : ' required />
-                    <textarea name="texto" id="texto"></textarea>
-                    <button>Enviar</button>
+                  <form action="#" onSubmit={sub}>
+                    <input ref={nom} type="text" name='nome' placeholder='Nome : ' required autoComplete='off'/>
+                    <input ref={num} type="number" name='number' placeholder='Número : ' required />
+                    <textarea ref={text} name="texto" id="texto"></textarea>
+                    <button onClick={fale_conosco_}>Enviar</button>
                   </form>
                   <div>
 

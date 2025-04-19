@@ -5,9 +5,10 @@ import Header from "../components/header/Header";
 import "./May_Love.css";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import URL from "../Url";
 
 // const URL = "http://localhost:3000/";
-const URL = "https://loveserver-psi.vercel.app/"
+// const URL = "https://loveserver-psi.vercel.app/"
 
 export default function May_Love(){
     const [declaracoes,setDeclaroes] = useState([])
@@ -40,7 +41,7 @@ export default function May_Love(){
                         my_love.length>0? <div>
                         <h1>{my_love[0].creater} <img src={my_love[0].img} alt="" /> {my_love[0].parcer}</h1>
                             <h2>{my_love[0].frase}</h2>
-                           <span>
+                           <span className="off">
                            <img src="" alt="" />
                             <img src="" alt="" />
                             <img src="" alt="" />

@@ -5,9 +5,10 @@ import "./create.css";
 import { Link, Outlet } from "react-router-dom";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
+import URL from "../Url";
 
 // const URL = "http://localhost:3000/";
-const URL = "https://loveserver-psi.vercel.app/"
+// const URL = "https://loveserver-psi.vercel.app/"
 
 export default function Creater(){
     const [sms,setSms] = useState("")
@@ -114,7 +115,7 @@ export default function Creater(){
                         <input onChange={(evt)=>{}} required ref={names} type="text" name="nome" className="name" placeholder="Seu Nome : " autoComplete="off"/>
                         <input onChange={(evt)=>{}} required ref={parcer} type="text" name="parceira" className="parceira" placeholder="Parceiro(a) : " autoComplete="off" />
                         <input onChange={(evt)=>{}} required ref={frase} type="text" name="frase" className="frase" placeholder="Uma frase Vossa : " autoComplete="off"  />
-                        <div className="center">
+                        <div className="center off">
                             <label htmlFor="img1">Primeira Imagem 1 (obrigatório)</label>
                             <input onChange={im1} type="file" id="img1"  className="off"/>
                             <label htmlFor="img2">Imagem 2 </label>
